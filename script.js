@@ -1,12 +1,14 @@
+// const baseUrl = "https://aztro.sameerkumar.website"
 
-const URL = 'https://aztro.sameerkumar.website/?sign=leo&day=today'
+
+//  let sign = ['sagittarius', 'aquarius', 'capricorn', 'aries', 'libra', 'virgo',
+// 'scorpio', 'taurus', 'pisces', 'gemini', 'leo', 'cancer'];
+// let day = ['today', 'yesterday', 'tomorrow'];
+
+const URL = 'https://aztro.sameerkumar.website?sign=leo&day=today'
 
 
 const form = document.querySelector('#searchBar');
-const sign = ['sagittarius', 'aquarius', 'capricorn', 'aries', 'libra', 'virgo',
-'scorpio', 'taurus', 'pisces', 'gemini', 'leo', 'cancer'];
-const day = ['today', 'yesterday', 'tomorrow'];
-
 
 
 function getData (event) {
@@ -22,18 +24,18 @@ function getData (event) {
     method: 'POST'
 })
 .then(res => res.json())
-.then(json => {
-    const date = json.current_date;
-    const num = json.lucky_number;
-    const horoscope = json.description;
-    const vibe = json.mood;
-    const match = json.compatibility;
-    const shade = json.color;
-    console.log(date, num, horoscope, vibe, match, shade)
-});
+.then(data => console.log(data))
 }
 
 form.addEventListener("submit", getData)
+
+
+
+
+
+
+
+
 
 // this lets you get info that you've console logged, you want this in the dom but dont know how.
 //you have the link but they're specified to a certain sign already, i need them blank so when 
@@ -42,3 +44,12 @@ form.addEventListener("submit", getData)
 //if you enter in "3" itll give you what ive console logged.
 
 
+// .then(json => {
+//     const date = json.current_date;
+//     const num = json.lucky_number;
+//     const horoscope = json.description;
+//     const vibe = json.mood;
+//     const match = json.compatibility;
+//     const shade = json.color;
+//     console.log(date, num, horoscope, vibe, match, shade)
+// });
