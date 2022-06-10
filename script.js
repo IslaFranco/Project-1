@@ -13,7 +13,7 @@ const form = document.querySelector('#search');
 
 function getData (event) {
     event.preventDefault();
-    let options = document.querySelector('#virgo').value;
+    let options = document.querySelector('input[type="radio"]:checked').value;
     let signName = document.querySelector('#sign-name')
     let horoscope = document.querySelector("#description")
 
@@ -24,7 +24,18 @@ function getData (event) {
      method: 'POST'
  })
 .then(res => res.json())
-.then(data => console.log(data))
+.then(data => {
+    document.querySelector('#sign-detail').innerHTML = `
+        <p>Color: ${data.color} </p>
+        <p>Compatibility: ${data.compatibility} </p>
+        <p>Current Date: ${data.current_date} </p>
+        <p>Date Range: ${data.date_range} </p>
+        <p>Horoscope: ${data.description} </p>
+        <p>Lucky Number: ${data.lucky_number} </p>
+        <p>Lucky Time: ${data.lucky_time} </p>
+        <p>Mood: ${data.mood} </p>
+        `
+})
 .catch(err => console.log(err))
 }
 
