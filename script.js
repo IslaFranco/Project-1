@@ -26,14 +26,14 @@ function getData (event) {
 .then(res => res.json())
 .then(data => {
     document.querySelector('#sign-detail').innerHTML = `
-        <p>Color: ${data.color} </p>
-        <p>Compatibility: ${data.compatibility} </p>
-        <p>Current Date: ${data.current_date} </p>
-        <p>Date Range: ${data.date_range} </p>
-        <p>Horoscope: ${data.description} </p>
-        <p>Lucky Number: ${data.lucky_number} </p>
-        <p>Lucky Time: ${data.lucky_time} </p>
-        <p>Mood: ${data.mood} </p>
+        <p>Color🌈: ${data.color} </p>
+        <p>Compatibility🤞: ${data.compatibility} </p>
+        <p>Current Date📆: ${data.current_date} </p>
+        <p>Date Range🗓️: ${data.date_range} </p>
+        <p>Horoscope👀: ${data.description} </p>
+        <p>Lucky Number🍀: ${data.lucky_number} </p>
+        <p>Lucky Time⏰: ${data.lucky_time} </p>
+        <p>Mood🙈: ${data.mood} </p>
         `
 })
 .catch(err => console.log(err))

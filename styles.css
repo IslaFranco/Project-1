@@ -1,19 +1,24 @@
 body {
-    background-color: rgb(205, 226, 241);
+    font-family: 'Tai Heritage Pro', serif;
+    background-color: black;
 }
 h1{
     justify-content: center;
     display: flex;
-    margin-top: 100px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
 }
 h2 {
     justify-content: center;
     display: flex;
+    color: white;
 }
 h3 {
     justify-content: center;
     display: flex;
     margin-top: 40px;
+    color: white;
 }
 
 input {
@@ -22,12 +27,44 @@ input {
     align-items: center;
     margin: 0 auto;
     padding: 10px;
+    color: white;
 }
 
 #searchButton {
     margin-top: 50px;
+    color: black;
+    background-color: white;
+    padding: 15px 25px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px #999;
+}
+#searchButton:hover {
+    background-color: rgb(136, 131, 131);
 }
 
 #sign-search {
     margin-top: 50px;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+}
+label:hover {
+    transform: scale(1.5);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+#sign-detail {
+   text-align: center;
+   color: white;
 }
