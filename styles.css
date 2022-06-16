@@ -13,13 +13,10 @@ h2 {
     justify-content: center;
     display: flex;
     color: white;
+    text-align: center;
+    padding: 30px;
 }
-h3 {
-    justify-content: center;
-    display: flex;
-    margin-top: 40px;
-    color: white;
-}
+
 
 input {
     display: flex;
@@ -41,10 +38,10 @@ input {
     outline: none;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 4px #999;
+    box-shadow: 0 4px rgb(235, 230, 230);
 }
 #searchButton:hover {
-    background-color: rgb(136, 131, 131);
+    background-color: rgb(207, 205, 205);
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s;
@@ -72,12 +69,20 @@ label:hover {
    color: white;
 }
 #scrollToTopBtn {
-    background-color: rgb(238, 227, 227);
+    background-color: white;
     border: none;
     color: white;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     width: 50px;
     height: 50px;
-    float: right;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+#scrollToTopBtn:hover {
+background-color: rgb(207, 205, 205);
+-webkit-transition: all .5s;
+-moz-transition: all .5s;
+transition: all .5s;
 }

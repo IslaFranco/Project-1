@@ -1,6 +1,6 @@
 # Astrology App
 
-An Astrology app that will give you a unique horoscope for today, yesterday, and tomorrow. You can choose your specific sign or a friend and see what there horoscope is for that day!
+An Astrology app that will give you some fun facts about your zodiac sign. You will simply just click the sign you wish to know more about, whether it be yours, a family member, or a friend, and see what information you get by scolling down! 
 
 # Technologies Used
  -HTML5
@@ -8,8 +8,6 @@ An Astrology app that will give you a unique horoscope for today, yesterday, and
  -CSS3
 
  -JavaScript
-
- -Bootstrap
 
 # Screenshots
 
