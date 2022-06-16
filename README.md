@@ -15,7 +15,7 @@ An Astrology app that will give you some fun facts about your zodiac sign. You w
 
 # Getting Started
 
-[click here]() to get your unique horoscope!
+[click here]('https://famous-gumdrop-4cd335.netlify.app') to get your unique horoscope!
 
 # Future Enhancements
 
