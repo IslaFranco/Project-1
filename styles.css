@@ -1,20 +1,35 @@
 body {
     font-family: 'Tai Heritage Pro', serif;
-    background-color: black;
+    background-image: linear-gradient(
+    #d16ba5,
+    #e17497,
+    #eb828b,
+    #ee9183,
+    #eda280,
+    #f1ad7d,
+    #f3b97b,
+    #f3c67b,
+    #f8d273,
+    #fbdf6b,
+    #f9ec64,
+    #f4fb5f
+  );
 }
 h1{
     justify-content: center;
     display: flex;
     margin-top: 50px;
     text-align: center;
-    color: white;
+    color: black;
+    font-size: 50px;
 }
 h2 {
     justify-content: center;
     display: flex;
-    color: white;
+    color: black;
     text-align: center;
-    padding: 30px;
+    padding: 40px;
+    font-size: 30px;
 }
 
 
@@ -24,7 +39,7 @@ input {
     align-items: center;
     margin: 0 auto;
     padding: 10px;
-    color: white;
+    color: black;
 }
 
 #searchButton {
@@ -32,7 +47,7 @@ input {
     color: black;
     background-color: white;
     padding: 15px 25px;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     cursor: pointer;
     outline: none;
@@ -54,8 +69,8 @@ input {
 label {
     display: flex;
     justify-content: center;
-    font-size: 20px;
-    color: white;
+    font-size: 25px;
+    color: black;
 }
 label:hover {
     transform: scale(1.5);
@@ -66,14 +81,14 @@ label:hover {
 
 #sign-detail {
    text-align: center;
-   color: white;
+   color: black;
 }
 #scrollToTopBtn {
-    background-color: white;
+    background-color: black;
     border: none;
     color: white;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     width: 50px;
     height: 50px;
     position: fixed;
