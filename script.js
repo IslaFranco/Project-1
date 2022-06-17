@@ -52,5 +52,7 @@ function getData (event) {
 
 form.addEventListener("submit", getData)
 
+document.getElementById('#sign-detail').style.fontSize = "30px";
+
 
   
